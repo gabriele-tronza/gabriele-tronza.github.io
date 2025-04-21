@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="it">
+
+{% include head.html %} {# Includi l'HEAD con meta tag, CSS, etc. #}
+
+<body>
+
+  {% include header.html %} {# Includi l'Header (navigazione) #}
+
+  <main class="main-content">
+    {{ content }} {# Qui verrà inserito il contenuto specifico della pagina (es. index.html) #}
+  </main>
+
+  {% include footer.html %} {# Includi il Footer #}
+
+  {# Includi qui eventuali script JS globali se necessario #}
+  {# <script src="{{ '/assets/js/script.js' | relative_url }}"></script> #}
+
+</body>
+
+</html>
