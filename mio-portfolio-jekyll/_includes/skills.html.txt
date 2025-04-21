@@ -1,0 +1,17 @@
+<section id="skills" class="skills-section section-padding">
+  <div class="container">
+    <h2 class="section-title">Competenze Tecniche</h2>
+    <div class="skills-grid">
+      {% for category_data in site.data.skills %}
+        <div class="skill-category">
+          <h3>{{ category_data.category }}</h3>
+          <ul>
+            {% for skill in category_data.items %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
