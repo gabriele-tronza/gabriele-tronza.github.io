@@ -1,0 +1,7 @@
+title: Gabriele Tronza
+description: Portfolio & Blog
+baseurl: ""
+url: "https://gabriele-tronza.github.io"
+
+markdown: kramdown
+theme: minima
